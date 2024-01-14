@@ -35,7 +35,7 @@ const Display = () => {
             <tr className="text-center">
               <th>s-no</th>
               <th>Title</th>
-              <th>Description</th>
+              <th>Descriptions</th>
               <th>Action</th>
             </tr>
           </thead>
