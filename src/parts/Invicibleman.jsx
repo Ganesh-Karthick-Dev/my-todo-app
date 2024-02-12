@@ -12,7 +12,7 @@ const MyVerticallyCenteredModal = (props) => {
 
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
-  const [id,setId] = useState(0) 
+  const [id,setId] = useState(0) ;
   const dispatch = useDispatch() ;
 
   useEffect(()=>{

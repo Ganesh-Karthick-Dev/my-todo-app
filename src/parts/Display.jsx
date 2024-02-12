@@ -5,7 +5,7 @@ import MyVerticallyCenteredModal from "./Invicibleman";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteFromList, setSelectedTodoList } from "../Redux/slices/Taskslice";
 
-const Display = () => {
+const Display = ({val2}) => {
 
   const dispatch = useDispatch()
 
@@ -48,10 +48,10 @@ const Display = () => {
                     <td>{data.title}</td>
                     <td>{data.description}</td>
                     <td className="d-flex justify-content-evenly gap-2 align-items-center">
-                      <Button variant="primary" onClick={()=>edit(data)}>
+                      <Button variant={`${val2}`} onClick={()=>edit(data)}>
                         <i className="bi bi-pencil-fill"></i>
                       </Button>
-                      <Button variant="primary" onClick={()=>del(data)}>
+                      <Button variant={`${val2}`} onClick={()=>del(data)}>
                         <i className="bi bi-x-square-fill"></i>
                       </Button>
                     </td>
